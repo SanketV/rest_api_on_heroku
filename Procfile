@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath main
+web: gunicorn main
