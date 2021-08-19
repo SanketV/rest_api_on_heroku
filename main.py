@@ -6,19 +6,49 @@ booksArr = [
         "id": 1,
         "title": "Harry Potter and the Goblet of Fire",
         "author": "J.K. Rowling",
-        "isbn": "1512379298"
+        "isbn": "111"
     },
     {
         "id": 2,
-        "title": "Lord of the Flies",
-        "author": "William Golding",
-        "isbn": "0399501487"
+        "title": "The Choice",
+        "author": "Edith Eger",
+        "isbn": "222"
+    },
+    {
+        "id": 3,
+        "title": "A Tree Grows in Brooklyn",
+        "author": "Betty Smith",
+        "isbn": "333"
+    },
+    {
+        "id": 4,
+        "title": "If only he knew",
+        "author": "Gary Smalley",
+        "isbn": "444"
+    },
+    {
+        "id": 5,
+        "title": "Matilda",
+        "author": "Roald Dahl",
+        "isbn": "555"
+    },
+    {
+        "id": 6,
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "isbn": "666"
+    },
+    {
+        "id": 7,
+        "title": "Charlotte's Webb",
+        "author": "E.B. White",
+        "isbn": "777"
     }
 ]
 
 app = Flask(__name__)
 
-ENV = 'PROD'
+ENV = 'dev'
 
 if ENV == 'dev':
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
