@@ -100,9 +100,9 @@ def get_books():
 @app.route("/library/v1.0/books/<int:book_id>", methods=["GET"])
 def get_book(book_id):
     result = {}
-    #for book in books:
-    #    if book["id"] == book_id:
-    #        result = jsonify({"book": book})
+    for bk in booksArr:
+        if bk["id"] == book_id:
+            result = jsonify({"book": bk})
     return result
 
 
@@ -122,7 +122,7 @@ def get_books_db():
         result.append(currBook)
         print('• ' + str(currBook))
 
-    return jsonify({"books": result});
+    return jsonify({"books": result})
 
 
 if __name__ == "__main__":
