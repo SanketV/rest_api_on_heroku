@@ -48,7 +48,7 @@ booksArr = [
 
 app = Flask(__name__)
 
-ENV = 'dev'
+ENV = 'PROD'
 
 if ENV == 'dev':
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
